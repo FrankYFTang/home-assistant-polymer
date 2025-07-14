@@ -9795,7 +9795,7 @@ fsevents@^1.2.7:
     workbox-cacheable-response: ^6.5.4
     workbox-core: ^6.5.4
     workbox-expiration: ^6.5.4
-    workbox-precaching: ^6.5.4
+    workbox-precaching: ^7.3.0
     workbox-routing: ^6.5.4
     workbox-strategies: ^6.5.4
     xss: ^1.0.14
@@ -16749,6 +16749,13 @@ typescript@^3.8.3:
   languageName: node
   linkType: hard
 
+"workbox-core@npm:7.3.0":
+  version: 7.3.0
+  resolution: "workbox-core@npm:7.3.0"
+  checksum: 94aeecd52305a48bb154f84256d454f8cb78b5c9b4167d2b80dbed4561ce74e2ebbc0a99717f1c4425408e7d7a6270530cd399cc7d821e346301180ec3204ed6
+  languageName: node
+  linkType: hard
+
 "workbox-expiration@npm:6.5.4, workbox-expiration@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-expiration@npm:6.5.4"
@@ -16780,7 +16787,7 @@ typescript@^3.8.3:
   languageName: node
   linkType: hard
 
-"workbox-precaching@npm:6.5.4, workbox-precaching@npm:^6.5.4":
+"workbox-precaching@npm:6.5.4":
   version: 6.5.4
   resolution: "workbox-precaching@npm:6.5.4"
   dependencies:
@@ -16788,6 +16795,17 @@ typescript@^3.8.3:
     workbox-routing: 6.5.4
     workbox-strategies: 6.5.4
   checksum: 15ef24ffb04edd13bcdfa6c4e7f64002551badce2d507031c343019b3bcdc569591fdff8f8e30cf1262d641d3eff611115bdda7b2ad0deb9d4ccef8f4be8bd20
+  languageName: node
+  linkType: hard
+
+"workbox-precaching@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "workbox-precaching@npm:7.3.0"
+  dependencies:
+    workbox-core: 7.3.0
+    workbox-routing: 7.3.0
+    workbox-strategies: 7.3.0
+  checksum: 16c91d2cd65b9b23b11b4e83d3d778f6a07d040ee0921667d2654d67b688e649697c0a850e9083ccdf81b63345fa516df86edb77e19fd9f838adecf5f968480d
   languageName: node
   linkType: hard
 
@@ -16823,12 +16841,30 @@ typescript@^3.8.3:
   languageName: node
   linkType: hard
 
+"workbox-routing@npm:7.3.0":
+  version: 7.3.0
+  resolution: "workbox-routing@npm:7.3.0"
+  dependencies:
+    workbox-core: 7.3.0
+  checksum: 55047fd767a3fdfdd1510aecaa945daf63e6779882b40211ab402560d25370902feb1d17c3036cbfb86c8ce60d0514e4bbfdd3fbf397ee8ada950832edb7603a
+  languageName: node
+  linkType: hard
+
 "workbox-strategies@npm:6.5.4, workbox-strategies@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-strategies@npm:6.5.4"
   dependencies:
     workbox-core: 6.5.4
   checksum: 52134ecd6c05f4edd31e7b022b33a91b7b59c215bfdfb987bc0f10be02fea4d4e6385a9638a2303ba336190c5d28f9721182cd78a6779b9c817a66ec12cb1c6b
+  languageName: node
+  linkType: hard
+
+"workbox-strategies@npm:7.3.0":
+  version: 7.3.0
+  resolution: "workbox-strategies@npm:7.3.0"
+  dependencies:
+    workbox-core: 7.3.0
+  checksum: ac0c14afe2358c8b56974206b0d021412d04ab63b8d04f4950a09d0f28309a49146efef740a1e0bb2875fe55d561b48ff0fcb662e46a42060dbdf19ef641c5f1
   languageName: node
   linkType: hard
 
