@@ -22,9 +22,9 @@ type WeekdayIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6;
 export const firstWeekdayIndex = (locale: FrontendLocaleData): WeekdayIndex => {
   if (locale.first_weekday === FirstWeekday.language) {
     // @ts-ignore
-    if ("weekInfo" in Intl.Locale.prototype) {
+    if ("getWeekInfo" in Intl.Locale.prototype) {
       // @ts-ignore
-      return new Intl.Locale(locale.language).weekInfo.firstDay % 7;
+      return new Intl.Locale(locale.language).getWeekInfo().firstDay % 7;
     }
     return (getWeekStartByLocale(locale.language) % 7) as WeekdayIndex;
   }
