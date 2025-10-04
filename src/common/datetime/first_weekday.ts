@@ -16,7 +16,7 @@ export const firstWeekdayIndex = (locale: FrontendLocaleData): number => {
     // @ts-ignore
     if ("weekInfo" in Intl.Locale.prototype) {
       // @ts-ignore
-      return new Intl.Locale(locale.language).weekInfo.firstDay % 7;
+      return new Intl.Locale(locale.language).getWeekInfo().firstDay % 7;
     }
     return getWeekStartByLocale(locale.language) % 7;
   }
